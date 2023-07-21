@@ -8,7 +8,7 @@ function Login(props) {
 
   const handleSubmit = async (e)=>{
     e.preventDefault();
-    const response = await fetch(`${process.env.HOST}/api/auth/login`, {
+    const response = await fetch(`https://note-app-backend-zb7r.onrender.com/api/auth/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
