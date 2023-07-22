@@ -9,7 +9,7 @@ function Signup(props) {
   const handleSubmit = async (e)=>{
     e.preventDefault();
     const {name, email, password} = credentials;
-    const response = await fetch(`${process.env.HOST}/api/auth/createuser`, {
+    const response = await fetch(`https://note-app-backend-zb7r.onrender.com/api/auth/createuser`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
